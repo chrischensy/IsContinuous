@@ -15,6 +15,9 @@ int getdifference(int a[5]){
 
 bool havesamecards(int a[5]){
     for(int i =0;i<5;i++){
+        if(a[i]==0){
+            continue;
+        }
         for(int j=0;j<5;j++){
             if(a[i]==a[j])
                 return false;
